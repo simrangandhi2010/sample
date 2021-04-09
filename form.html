@@ -1,67 +1,77 @@
-<!Doctype Html>
-<Html>   
-<Head> 
-<link rel="stylesheet" href="styleassignment5.css">
-<Title>   
-Add the Background image using background attribute 
-</Title>
-</Head>
-<Body background="https://www.foodbusinessnews.net/ext/resources/2019/9/TractorFarm_Lead.jpg?1569426080"> 
-<form method="get" action="http://www.randyconnolly.com/tests/process.php">
-            
-            <fieldset>
-                <legend>AGRICAST</legend>
-                <table>
-                    
-                    
-                    <tr>
-                        <td>
-                           
-                            <p>
-                            <label>Location</label><br>
-                            <input type="text" name="city" list="cities"  size="45">
-                                <datalist id="cities">
-                                    <option>Ratnagiri</option>
-                                    <option>Nagpur</option>
-                                    <option>Solahpur</option>
-                                    <option>Sangli</option>
-                                </datalist>
-                                </p>
-                                </td>
-                        
-                        <td>
-                            
-                            
-                            <div class="rightBoxes">
-                                <label>Crops</label><br>
-                                <input type="checkbox" name="cc" >Rabi<br>
-                                    <input type="checkbox" name="cc">Kharif<br>
-                                        <input type="checkbox" name="cc">Zaid
-                                       
-                                                </div>
-                        </td>
-                    </tr>
-                    
-                    
-                    <tr>
-                        <td>
-                            <div class="rightBoxes">
-                                <p>
-                                <label>Date Today: <br>
-                                    <input type="date"  name="date">   
-                                        </label></p>                 
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <div class="rec center"> 
-                                <input type="submit" class="round"> <input type="reset" value="Clear Form" class="round">      
-                                    </div>
-                        </td>
-                    </tr>
-                </table>
-            </fieldset>
-        </form>
-</Body>
-</Html>
+<!-- Icons reference from : https://fontawesome.com/v4.7.0/icons/ -->
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Agricast</title>
+    <script src="https://use.fontawesome.com/4ecc3dbb0b.js"></script>
+    <link href="formstyle.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family: 'Nunito', sans-serif; font-weight: 600;">
+    <div class="bg_img"></div>
+    <div class="form_wrapper">
+        <div class="form_container">
+            <div class="title_container">
+                <h2>Agricast</h2>
+                <h3>The Solution to your losses.</h3>
+            </div>
+            <form>
+                <div class="row clearfix">
+                    <div class="col_half">
+                        <label>Location</label>
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-map-marker"></i></span>
+                            <input type="text" name="city" list="cities" size="45" placeholder="Mumbai" required />
+                            <datalist id="cities">
+                                <option>Ratnagiri</option>
+                                <option>Nagpur</option>
+                                <option>Solahpur</option>
+                                <option>Sangli</option>
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="col_half">
+                        <label>Crops</label>
+                        <div class="input_field">
+                            <input type="checkbox" name="cc"> Rabi<br>
+                            <input type="checkbox" name="cc"> Kharif<br>
+                            <input type="checkbox" name="cc"> Zaid
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col_half">
+                        <label>Date Today:</label>
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-calendar"></i></span>
+                            <input type="date" name="date" required>
+                        </div>
+                    </div>
+                    <!-- <div class="col_half">
+                        <label>Phone</label>
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-phone"></i></span>
+                            <input type="tel" name="phone" placeholder="Phone no" pattern="[0-9]{10}" />
+                        </div>
+                    </div> -->
+                </div>
+                <div class="row clearfix">
+                    <!-- <div>
+                        <label>Comments</label>
+                        <div class="textarea_field"> <span><i aria-hidden="true" class="fa fa-comment"></i></span>
+                            <textarea cols="46" rows="3" name="comments"></textarea>
+                        </div>
+                    </div> -->
+                </div>
+                <br>
+                <input class="button" type="submit" value="Submit" />
+                &nbsp;&nbsp;
+                <input class="button" type="reset" value="Clear Form">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
